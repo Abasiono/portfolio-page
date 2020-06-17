@@ -1,0 +1,138 @@
+*{box-sizing: border-box;
+ margin: 0;
+ padding:0;
+}
+
+
+body{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#nav-bar{ display: flex;
+position: fixed;
+top:0;
+background-color: maroon;
+width: 100%;
+padding:30px;}
+
+ul{list-style-type: none;
+margin:0;
+padding:0;}
+
+li { 
+    display:inline;
+}
+
+li a{text-decoration: none;
+color: white;
+text-align: center;
+padding:15px 20px;}
+
+#welcome-section{display: flex;
+    flex-direction: column;
+background-color:rgb(37, 35, 35);
+width:100%;
+height: 100vh;
+justify-content: center;
+align-items: center;
+color:white;
+padding:10px;
+}
+
+#welcome-section h1{
+    font-size: 54px;
+}
+
+#welcome-section p{font-size: 34px;
+font-weight: lighter;
+font-style: italic;
+color: maroon;}
+
+#projects{background-color: rgb(90, 90, 172);
+color:white;
+height:100vh;
+padding:10px;
+}
+
+#projects h1{
+text-align: center;
+font-size: 44px;
+width:100%;
+padding:30px;}
+
+.pro{
+    display:grid;  
+    grid-template-columns: auto auto auto;
+    margin:20px;
+    
+}
+
+.project-tile{
+box-shadow: 1px 1px 5px rgb(167, 173, 167);
+background-color:  rgb(64, 64, 66);
+margin: 10px;
+height:400px;
+}
+
+.project-tile a {
+text-decoration: none;
+color: white;
+text-align: center;
+font-size: 23px;
+}
+
+footer #contacts{
+ background-color:rgb(49, 47, 47) ;
+ color: white;
+ width:100%;
+ height:100vh;
+}
+    
+footer #contacts h1{
+ font-size: 55px;
+ font-weight: bold;
+}
+    
+footer #contacts h5{
+ font-size: 20px;
+ font-weight: lighter;
+ text-align: center;
+}
+    
+    
+.icons a{
+ text-decoration: none;
+ color:white;
+}
+
+i{
+ font-size: 54px;
+}
+
+@media screen and(max-width:600px){
+    #welcome-section h1{
+        font-size: 24px;
+        text-align: center;
+    }
+    #welcome-section p{
+     font-size: 14px;
+     font-weight: lighter;
+     font-style: italic;
+     color: maroon;
+     text-align: center;}
+  .project-tile{
+      box-shadow: 1px 1px 5px rgb(167, 173, 167);
+      background-color:  rgb(64, 64, 66);
+      margin:20px;
+        }
+        
+
+    .pro{
+        display: grid;
+        grid-template-columns: auto; 
+        
+     }
+    
+        
+
+}
